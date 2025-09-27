@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}Inspection Services{% endblock %}
+
+{% block content %}
+<div class="page-layout">
+    
+    <aside class="side-menu-container">
+        
+        <h2 class="menu-title">Service Menu</h2>
+        
+        <ul class="vertical-menu">
+            <li class="menu-item active">
+                <a href="{{ url_for('inspection') }}">Inspection</a>
+            </li>
+            
+            <li class="menu-item"><a href="{{ url_for('rig_acceptance') }}">Rig Acceptance and Testing</a></li>
+            <li class="menu-item"><a href="{{ url_for('lifting_inspection') }}">Lifting Inspection & Accessories</a></li>
+            <li class="menu-item"><a href="{{ url_for('bop_inspection') }}">Blowout Preventer (BOP) Inspection and Testing</a></li>
+            <li class="menu-item"><a href="{{ url_for('drops_inspection') }}">DROPS Inspection</a></li>
+            <li class="menu-item"><a href="{{ url_for('consulting_services') }}">Consulting Services</a></li>
+            <li class="menu-item"><a href="{{ url_for('training_programs') }}">Training Programs</a></li>
+            <li class="menu-item"><a href="{{ url_for('inspection') }}">inspection</a></li>
+        </ul>
+        
+    </aside>
+    
+    <main class="main-content">
+        
+        <h1 class="main-page-header">Ensuring the Safety and Integrity of Your Assets</h1>
+
+        <section class="inspection_services">
+            
+            <h3>What Is Inspection?</h3>
+            <p>Inspection is a structured and systematic evaluation of assets to detect any signs of wear, damage, or defects. It encompasses both visual assessments and advanced non-destructive testing (NDT) techniques.</p>
+            <p>These NDT methods—such as **Magnetic Particle Inspection (MPI)**, **Dye Penetrant Inspection (DPI)**, **Ultrasonic Testing (UT)**, **Radiographic Testing (RT)**, and **Positive Material Identification (PMI)**—allow for the detection of flaws that are not visible to the naked eye, ensuring a deeper level of scrutiny and reliability.</p>
+
+            <h3>Why Inspection Matters</h3>
+            <p>Inspection plays a vital role in asset integrity for several key reasons:</p>
+            <ul>
+                <li><strong>Accident and Failure Prevention:</strong> Early detection and correction of defects significantly reduce the risk of operational failures and safety incidents.</li>
+                <li><strong>Safety and Structural Integrity:</strong> Regular inspections ensure that assets remain safe to operate and structurally sound, minimizing unexpected breakdowns.</li>
+                <li><strong>Operational Efficiency:</strong> Proactive inspection reduces downtime and unplanned maintenance, improving overall productivity and cost-effectiveness.</li>
+            </ul>
+
+            <h3>Inspection Services by East Energy Limited</h3>
+            <p>At East Energy Limited, we deliver a comprehensive suite of inspection services designed to meet the rigorous demands of the oil and gas industry:</p>
+            <ul>
+                <li><strong>Non-Destructive Testing (NDT):</strong> Utilizing advanced methods such as MPI, DPI, UT, RT, and PMI, we uncover hidden flaws and ensure asset integrity.</li>
+                <li><strong>Visual Inspection:</strong> Our experienced inspectors conduct detailed visual evaluations to identify surface-level damage or wear.</li>
+                <li><strong>In-House Inspection:</strong> Our modern inspection facility is equipped to handle a wide range of asset evaluations with precision and efficiency.</li>
+                <li><strong>On-Site Inspection:</strong> For maximum convenience, we offer mobile inspection services directly at your operational site.</li>
+            </ul>
+
+            <h3>Benefits of Regular Inspection</h3>
+            <p>Choosing East Energy Limited for your inspection needs brings measurable advantages:</p>
+            <ul>
+                <li><strong>Minimized Risk:</strong> Early detection of issues reduces the likelihood of accidents and costly failures.</li>
+                <li><strong>Enhanced Safety and Reliability:</strong> Timely repairs and assessments ensure your assets remain dependable and safe.</li>
+                <li><strong>Improved Efficiency:</strong> Preventive maintenance leads to optimized performance and reduced downtime.</li>
+                <li><strong>Peace of Mind:</strong> Knowing your assets are regularly inspected instills confidence across your organization.</li>
+            </ul>
+
+            <div class="conclusion-box">
+                <h3>Conclusion: A Commitment to Excellence</h3>
+                <p>Inspection is more than a regulatory requirement—it’s a proactive strategy for protecting people, assets, and the environment. At East Energy Limited, we view inspection as a cornerstone of operational excellence. By identifying and resolving potential issues early, we help our clients maintain safe, efficient, and resilient operations.</p>
+
+                <h3>Get in Touch</h3>
+                <p>For more information about our inspection services or to discuss your specific needs, contact our team today. Together, we’ll chart a path toward safety, reliability, and success.</p>
+                <p class="signature">East Energy Limited<br>Inspection and Testing Services for the Oil and Gas Industry</p>
+            </div>
+        </section>
+    </main>
+    
+</div>
+{% endblock content %}

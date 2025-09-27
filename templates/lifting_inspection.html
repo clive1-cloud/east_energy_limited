@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Lifting Inspection & Accessories Services{% endblock %}
+
+{% block content %}
+<div class="page-layout">
+    
+    <aside class="side-menu-container">
+        
+        <h2 class="menu-title">Service Menu</h2>
+        
+        <ul class="vertical-menu">
+            <li class="menu-item active">
+                <a href="{{ url_for('lifting_inspection') }}">Inspection</a>
+            </li>
+            
+            <li class="menu-item"><a href="{{ url_for('rig_acceptance') }}">Rig Acceptance and Testing</a></li>
+            <li class="menu-item"><a href="{{ url_for('lifting_inspection') }}">Lifting Inspection & Accessories</a></li>
+            <li class="menu-item"><a href="{{ url_for('bop_inspection') }}">Blowout Preventer (BOP) Inspection and Testing</a></li>
+            <li class="menu-item"><a href="{{ url_for('drops_inspection') }}">DROPS Inspection</a></li>
+            <li class="menu-item"><a href="{{ url_for('consulting_services') }}">Consulting Services</a></li>
+            <li class="menu-item"><a href="{{ url_for('training_programs') }}">Training Programs</a></li>
+            <li class="menu-item"><a href="{{ url_for('inspection') }}">inspection</a></li>
+        </ul>
+        
+    </aside>
+    
+    <main class="main-content">
+        
+        <h1 class="main-page-header">Safeguarding the Integrity of Your Lifting Equipment</h1>
+
+        <section class="lifting-services">
+            
+            <h3>What Are Lifting Inspection & Accessories Services?</h3>
+            <p>Lifting inspection and accessories services encompass a **comprehensive suite of evaluations and maintenance procedures** designed to ensure the safe operation of lifting equipment. Our approach includes:</p>
+            <ul>
+                <li><strong>Visual Inspection:</strong> A detailed visual assessment to detect surface-level issues such as cracks, corrosion, deformation, or signs of wear.</li>
+                <li><strong>Non-Destructive Testing (NDT):</strong> Advanced techniques like ultrasonic testing and radiography are used to uncover hidden flaws that may compromise structural integrity.</li>
+                <li><strong>Mechanical Testing:</strong> Strength and durability are verified through tensile, impact, and load testing to ensure equipment can withstand operational demands.</li>
+                <li><strong>Documentation Review:</strong> We examine operating manuals, inspection logs, and maintenance records to confirm proper usage and upkeep.</li>
+            </ul>
+
+            <h3>Why These Services Matter</h3>
+            <p>At East Energy Limited, we view lifting inspection and accessories as a **proactive investment in safety and operational excellence**. Their importance is underscored by several key factors:</p>
+            <ul>
+                <li>**Accident Prevention:** Early detection and correction of defects significantly reduce the risk of equipment failure and workplace injuries.</li>
+                <li>**Safety Culture Reinforcement:** Prioritizing inspections fosters a culture of accountability and continuous improvement across your organization.</li>
+                <li>**Regulatory Compliance:** Our services ensure adherence to national and international safety standards, helping you avoid penalties and legal exposure.</li>
+                <li>**Liability Mitigation:** Documented inspections and testing demonstrate due diligence, reducing your organization’s liability in the event of an incident.</li>
+            </ul>
+
+            <h3>How East Energy Limited Delivers These Services</h3>
+            <p>Operating across Nigeria, our team of **certified inspectors and engineers** brings deep expertise and cutting-edge technology to every inspection. Whether conducted in-house at our facilities or on-site at your location, our services are tailored to meet the specific needs of your lifting operations. We offer a full range of NDT and mechanical testing solutions to ensure comprehensive coverage.</p>
+
+            <h3>Benefits of Partnering with East Energy Limited</h3>
+            <p>Choosing East Energy Limited for your lifting inspection and accessories needs delivers measurable advantages:</p>
+            <ul>
+                <li>**Lower Risk of Accidents:** Proactive hazard identification leads to safer operations and fewer disruptions.</li>
+                <li>**Stronger Safety Culture:** Employees become more engaged and safety-conscious, contributing to a resilient work environment.</li>
+                <li>**Streamlined Compliance:** Our thorough assessments simplify the process of meeting regulatory requirements.</li>
+                <li>**Reduced Liability Exposure:** Demonstrating a commitment to safety through documented inspections protects your organization from reputational and financial harm.</li>
+            </ul>
+
+            <div class="conclusion-box">
+                <h3>Conclusion: A Commitment to Safety and Reliability</h3>
+                <p>Lifting inspection and accessories services are essential for maintaining the integrity, performance, and safety of your equipment. At East Energy Limited, we help you stay ahead of risks, ensure compliance, and build a culture where safety is embedded in every operation. No matter your industry, prioritizing these services is a strategic step toward protecting your workforce and optimizing your operations.</p>
+                <p class="signature">East Energy Limited<br>Inspection and Testing Services for the Oil and Gas Industry</p>
+            </div>
+        </section>
+    </main>
+    
+</div>
+{% endblock content %}

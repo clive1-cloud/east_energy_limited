@@ -1,0 +1,199 @@
+/* --- LAYOUT AND PAGE STRUCTURE (UNCHANGED) --- */
+.page-layout {
+    display: flex;
+    max-width: 1200px; /* Adjust this to control overall page width */
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color:white;
+}
+
+.side-menu-container {
+    width: 250px;
+    flex-shrink: 0;
+    padding-right: 20px;
+}
+
+/* --- GLOBAL PAGE STYLES (NEW ADDITION) --- */
+body {
+    background-color: white; /* Ensures the entire page background is white */
+    color: #111; /* Sets a dark black color for default text */
+    margin: 0; /* Removes default browser margin */
+    /* Assumes your fixed navbar is 5rem tall. Adjust this value if your navbar height is different. */
+    padding-top: 5rem; 
+}
+a {
+    color: #111; /* Ensures non-menu links are black by default */
+}/* --- GLOBAL PAGE STYLES (NEW ADDITION) --- */
+body {
+    background-color: white; /* Ensures the entire page background is white */
+    color: #111; /* Sets a dark black color for default text */
+    margin: 0; /* Removes default browser margin */
+    /* Assumes your fixed navbar is 5rem tall. Adjust this value if your navbar height is different. */
+    padding-top: 5rem; 
+}
+a {
+    color: #111; /* Ensures non-menu links are black by default */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+/* --- MENU TITLE STYLING (UNCHANGED) --- */
+.menu-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 15px 5px 15px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #333;
+}
+
+/* --- VERTICAL MENU LIST STYLING (UNCHANGED) --- */
+.vertical-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    border-bottom: 1px solid #ddd;
+}
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+/* --- LINK STYLING (The light green background - UNCHANGED) --- */
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    color: #333;
+    background-color: #e0f0e0; /* LIGHT GREEN/MINT COLOR */
+    transition: all 0.2s ease;
+}
+
+.menu-item a:hover {
+    background-color: #d0e0d0;
+}
+
+/* --- ACTIVE/SELECTED ITEM STYLING (The black background - UNCHANGED) --- */
+.menu-item.active a {
+    color: #fff;
+    background-color: #000; /* BLACK background for selected item */
+    font-weight: bold;
+}
+
+/* --- CONTENT TYPOGRAPHY (SLIGHTLY MODIFIED) --- */
+.main-page-header {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    background-color: #cce0ff; /* Light blue highlight */
+    display: inline;
+    padding: 0 0.5rem;
+    box-decoration-break: clone;
+    margin-bottom: 2rem; /* Added margin for spacing */
+}
+
+.main-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-content p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.main-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 1rem;
+    color: #555; /* Ensure list text also has proper color */
+}
+
+.main-content ul li strong {
+    color: #333; /* Make strong tags slightly darker for emphasis */
+}
+
+/* --- SWIPER.JS CUSTOM STYLING --- */
+.swiper-carousel-section {
+    margin-top: 2.5rem; /* Space above the carousel */
+    margin-bottom: 3rem; /* Space below the carousel */
+}
+
+.swiper-carousel-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Center the title for the carousel */
+}
+
+.swiper {
+    width: 100%;
+    height: auto; /* Height will adjust based on image */
+    background-color: #f5f5f5; /* Light background for the carousel area */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures images don't spill out */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff; /* White background for individual slides */
+    display: flex; /* Flexbox for centering image/caption */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* For caption positioning */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto; /* Ensure images scale correctly */
+    object-fit: cover; /* Crop images to fit if aspect ratios differ slightly */
+}
+
+.swiper-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #007aff; /* Swiper default blue, can change to match theme */
+    opacity: 0.8;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+}
+
+/* Swiper pagination dots */
+.swiper-pagination-bullet {
+    background: #007aff; /* Swiper default blue for active dot */
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background: #007aff; /* Active dot color */
+    opacity: 1;
+}

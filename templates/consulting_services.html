@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}Consulting Services{% endblock %}
+
+{% block content %}
+<div class="page-layout">
+    
+    <aside class="side-menu-container">
+        
+        <h2 class="menu-title">Service Menu</h2>
+        
+        <ul class="vertical-menu">
+            <li class="menu-item"><a href="{{url_for ('inspection')}}">Inspection</a></li>
+            <li class="menu-item"><a href="{{url_for ('rig_acceptance')}}">Rig Acceptance and Testing</a></li>
+            <li class="menu-item"><a href="{{url_for ('lifting_inspection')}}">Lifting Inspection & Accessories</a></li>
+            <li class="menu-item"><a href="{{url_for ('bop_inspection')}}">Blowout Preventer (BOP) Inspection and Testing</a></li>
+            <li class="menu-item"><a href="{{url_for ('drops_inspection')}}">DROPS Inspection</a></li>
+            
+            <li class="menu-item active">
+                <a href="{{url_for ('consulting_services')}}">Consulting Services</a>
+            </li>
+            
+            <li class="menu-item"><a href="{{url_for ('training_programs')}}">Training Programs</a></li>
+        </ul>
+        
+    </aside>
+    
+    <main class="main-content">
+        
+        <h1 class="main-page-header">Driving Compliance and Performance Excellence</h1>
+
+        <section class="consulting-services-content">
+            
+            <h3>What Are Consulting Services?</h3>
+            <p>Consulting services at East Energy Limited encompass a broad spectrum of expert guidance tailored to help businesses enhance performance, ensure compliance, and manage risk. Our offerings span multiple critical domains:</p>
+            <ul>
+                <li><strong>Regulatory Compliance:</strong> Ensuring your operations align with the latest laws, standards, and industry-specific regulations.</li>
+                <li><strong>Quality Management:</strong> Refining processes to maintain consistent delivery of high-quality products and services.</li>
+                <li><strong>Health and Safety:</strong> Establishing robust protocols to protect your workforce and operational assets.</li>
+                <li><strong>Environmental Management:</strong> Integrating sustainable practices to reduce environmental impact and support long-term viability.</li>
+                <li><strong>Supply Chain Optimization:</strong> Enhancing the reliability, transparency, and efficiency of supply chain operations.</li>
+                <li><strong>Asset Integrity Management:</strong> Preserving the functionality and reliability of critical infrastructure and equipment.</li>
+                <li><strong>Risk Management:</strong> Identifying, assessing, and mitigating risks to safeguard your organization’s interests.</li>
+            </ul>
+
+            <h3>Why Consulting Services Matter</h3>
+            <p>Engaging East Energy Limited’s consulting expertise delivers strategic value across several dimensions:</p>
+            <ul>
+                <li><strong>Regulatory Agility:</strong> Our consultants keep your business aligned with evolving regulations, helping you avoid costly missteps.</li>
+                <li><strong>Expert Execution:</strong> We ensure that compliance and performance strategies are implemented effectively and efficiently.</li>
+                <li><strong>Risk Reduction:</strong> Proactive identification and mitigation of risks create a more secure and resilient business environment.</li>
+                <li><strong>Performance Optimization:</strong> Tailored solutions drive measurable improvements in productivity, quality, and operational outcomes.</li>
+            </ul>
+
+            <h3>How East Energy Limited Delivers Consulting Services</h3>
+            <p>Operating across Nigeria and beyond, our team of **seasoned consultants** brings deep industry knowledge and hands-on experience to every engagement. We offer:</p>
+            <ul>
+                <li>Regulatory Compliance Consulting: Helping you meet and exceed regulatory expectations.</li>
+                <li>Quality Management Consulting: Designing systems that uphold excellence in every output.</li>
+                <li>Health and Safety Consulting: Building a culture of safety through strategic planning and training.</li>
+                <li>Environmental Consulting: Crafting sustainable solutions that align with global environmental standards.</li>
+                <li>Supply Chain Consulting: Streamlining logistics and procurement for optimal flow and cost-efficiency.</li>
+                <li>Asset Integrity Consulting: Ensuring your assets remain reliable, safe, and productive.</li>
+                <li>Risk Management Consulting: Developing frameworks to anticipate and neutralize threats.</li>
+            </ul>
+
+            <h3>Benefits of Partnering with East Energy Limited</h3>
+            <p>Our consulting services offer tangible advantages that elevate your organization:</p>
+            <ul>
+                <li>**Reduced Compliance Risk:** Stay ahead of regulatory changes and avoid penalties.</li>
+                <li>**Enhanced Operational Performance:** Implement strategies that drive measurable results.</li>
+                <li>**Greater Efficiency:** Eliminate bottlenecks and optimize resource utilization.</li>
+                <li>**Cost Savings:** Identify and remove inefficiencies to reduce overhead and improve margins.</li>
+            </ul>
+
+            <div class="conclusion-box">
+                <h3>Conclusion: A Strategic Partner for Sustainable Success</h3>
+                <p>Consulting services are more than external advice—they are a **catalyst for transformation**. At East Energy Limited, we help organizations navigate complexity, embrace innovation, and achieve operational excellence. Whether your goal is compliance, performance, or resilience, our consulting expertise is your strategic advantage.</p>
+            </div>
+        </section>
+    </main>
+    
+</div>
+{% endblock content %}

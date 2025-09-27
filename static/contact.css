@@ -1,0 +1,157 @@
+.contact__container {
+  background: #000; /* Black background */
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  margin: 7rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: #fff; /* Default text color */
+}
+
+/* ======== Aside Section ======== */
+.contact__aside {
+  background: #111;
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 5rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.aside__image {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.contact__aside h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #00bcd4;
+}
+
+.contact__aside p {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.contact__details {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.contact__details li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.contact__details i {
+  font-size: 1.2rem;
+  color: #00bcd4;
+}
+
+/* ======== Form Section ======== */
+.contact__form {
+  background: #111;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.form__name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact__form input[type="text"]:nth-child(1),
+.contact__form input[type="text"]:nth-child(2) {
+  width: 50%;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none;
+  border: 1px solid #00bcd4;
+}
+
+.contact__form button {
+  padding: 1rem 2rem;
+  background: #00bcd4;
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact__form button:hover {
+  background: #0097a7;
+}
+
+/* ======== Responsive Tweaks ======== */
+@media screen and (max-width: 1024px) {
+  .contact__container {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+
+  .contact__aside {
+    bottom: 0;
+    padding: 2rem;
+  }
+
+  .contact__form {
+    margin-right: 0;
+  }
+
+  .form__name {
+    flex-direction: column;
+  }
+
+  .form__name input[type="text"] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .contact__form {
+    margin: 0;
+  }
+}
