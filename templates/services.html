@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %} EAST ENERGY LIMITED {% endblock %}
+
+
+{% block content %}
+
+     <section class="services">
+      <h2 style="padding: center;"> our services</h2>
+      <div class="container services__container">
+        <article class="service">
+          <div class ="services__image">
+            <img src="./static/images/inspections.jpg">
+
+          </div>
+          <div class="service__info">
+          <h4>inspection</h4>
+          <p> Ensuring the Safety and Integrity of Your Assets</p>
+          <a href="{{url_for ('inspection')}}" class="btn btn-primary">service</a>
+           </div>
+        </article>
+          
+
+        <article class="service">
+          <div class ="services__image">
+            <img src="./static/images/drop_inspection.jpg">
+
+          </div>
+          <div class="service__info">
+          <h4 >Drops inspection </h4>
+          <p> Eliminating Life-Threatening Hazards Caused by Dropped Objects</p>
+          <a href="{{url_for ('drops_inspection')}}" class="btn btn-primary">service</a>
+           </div>
+        </article>
+          
+
+        <article class="service">
+          <div class ="services__image">
+            <img src="./static/images/Maintenance_mobile.jpg">
+
+          </div>
+          <div class="service__info">
+          <h4>lifting inspection &<br>accessories </h4>
+          <p> Ensuring the Safety of Your Lifting Equipment</p>
+          <a href="{{ url_for('lifting_inspection') }}" class="btn btn-primary">service</a>
+           </div>
+        </article>
+          
+
+        <article class="service">
+          <div class ="services__image">
+            <img src="./static/images/servicees.jpg">
+
+          </div>
+          <div class="service__info">
+          <h4 >Rig Acceptance and testing</h4>
+          <p>Ensuring Your Rig is Fit for Purpose</p>
+          <a href="{{url_for ('rig_acceptance')}}" class="btn btn-primary">service</a>
+           </div>
+        </article>
+         
+
+        <article class="service">
+          <div class ="services__image">
+            <img src="./static/images/bop.jpg">
+
+          </div>
+          <div class="service__info">
+          <h4 >Bop inspection and testing</h4>
+          <p>The Significance of BOP Inspection and Testing</p>
+          <a href="{{url_for ('bop_inspection')}}" class="btn btn-primary">service</a>
+           </div>
+        </article>
+
+        <article class="service">
+          <div class ="services__image">
+            <img src="./static/images/rig-inspectors-AdobeStock.jpg">
+
+          </div>
+          <div class="service__info">
+          <h4 >consulting services</h4>
+          <p>Ensuring Compliance and Boosting Performance</p>
+          <a href="{{url_for ('consulting_services')}}" class="btn btn-primary">service</a>
+           </div>
+        </article>
+
+        <article class="service">
+          <div class ="services__image">
+            <img src="./static/images/training program.jpg">
+
+          </div>
+          <div class="service__info">
+          <h4 >Training programs</h4>
+          <p>Improving Employee Knowledge, Engagement, and Skills.</p>
+          <a href="{{url_for ('training_programs')}}" class="btn btn-primary">service</a>
+           </div>
+        </article>
+      </div>
+
+    </section>
+
+ {% endblock content %}

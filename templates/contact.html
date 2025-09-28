@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}EAST ENERGY LIMITED{% endblock %}
+
+{% block content %}
+
+
+    <section class="contact">
+        <div class="container contact__container">
+            <aside class="contact_aside">
+                <div class="aside__image">
+                    <img src="./static/images/contact.svg">
+                </div>
+                <h2> Contact Us</h2>
+                <P>
+                    asperiores veniam vel doloribus assumedouosx 
+                    sassumenda soluta blanditis dolores qui voluptates ,consequatur vitae.
+                </P>
+                <ul class="contact__details">
+                    <li>
+                        <i class="contact__details"></i>
+                        <h5>+233552456789</h5>
+                    </li>
+                    <li>
+                        <i class="uli uli-envelope"></i>
+                        <h5>ogumecharlie@gmail.com</h5>
+                    </li>
+                    <li>
+                        <i class="uli uli-location-point"></i>
+                        <h5>Nigeria, Ghana</h5>
+                    </li>
+                </ul>
+                <ul class="contact__socials">
+                    <li> <a href="https://facebook.com"><i class="uli uli-facebook.com"></i></li></a>
+                    <li> <a href="https://instagram.com"><i class="uli uli-facebook.com"></i></li></a>
+                    <li> <a href="https://twitter.com"><i class="uli uli-facebook.com"></i></li></a>
+                    <li> <a href="https://linkedin.com"><i class="uli uli-facebook.com"></i></li></a>
+
+                </ul>
+            </aside>
+
+            <form action="https://formspree.io/f/mwprkjpo" class="contact__form" method="POST">
+                <div class="form__name">
+                    <input type="text" name="first Name" placeholder="first name" required>
+                    <input type="text" name="last name" placeholder="Last Name" required>
+                </div>
+
+                <input type="email" name="Email Address" placeholder="your Email Address" required>
+                <textarea name="Message" rows="7" placeholder="message" required></textarea>
+                <button type="submit" class="btn btn-primary"> send message</button>
+                </input>
+            </form>
+
+        </div>
+    </section>
+    
+{% endblock content %}
