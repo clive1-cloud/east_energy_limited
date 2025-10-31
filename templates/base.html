@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="static/images/mllp.png" />
-    <title>{% block title %}EAST ENERGY LIMITED{% endblock %}</title>
+    <title>{% block title %}Energy East Atlantic{% endblock %}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">   
     <link rel="stylesheet" href="{{url_for('static', filename='contact.css')}}">
@@ -21,8 +21,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
-</head>
+    <style>
+    body{
+      background-image: url('/static/images/bop.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+</style>
+  </head>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
@@ -31,6 +40,7 @@
     });
   });
 </script>
+
 <body>
     <nav>
         <div class="container nav__container">
@@ -95,7 +105,7 @@
         </div>
       </div>
          <div class="footer__copyright">
-          <small>copyright EAST ENERGY LIMITED &COPY; made by Clive</small>
+          <small>copyright Energy East Atlantic &COPY; made by Clive</small>
         </div>
 
 
